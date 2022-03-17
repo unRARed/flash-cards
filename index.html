@@ -1,0 +1,108 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:title" content="">
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <!-- Place favicon.ico in the root directory -->
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+
+  <meta name="theme-color" content="#fafafa">
+  <link rel="stylesheet" href="https://unpkg.com/purecss@2.1.0/build/pure-min.css" integrity="sha384-yHIFVG6ClnONEA5yB5DJXfW2/KC173DIQrYoZMEtBvGzmf0PKiGyNEqe9N6BNDBH" crossorigin="anonymous">
+  <script src="js/vendor/modernizr-3.11.2.min.js"></script>
+  <script src="https://unpkg.com/react@17/umd/react.production.min.js" crossorigin></script>
+  <script src="https://unpkg.com/react-dom@17/umd/react-dom.production.min.js" crossorigin></script>
+  <script src="https://unpkg.com/babel-standalone@6/babel.min.js" crossorigin></script>
+  <script src="./js/acronyms.js"></script>
+  <style>
+    html {
+      box-sizing: border-box;
+    }
+    *, *:before, *:after {
+      box-sizing: inherit;
+    }
+    body {
+      background: white;
+      font-size: 2em;
+      height: 100%;
+      width: 100%;
+    }
+    .container {
+      max-width: 1024px; margin: 0 auto;
+      position: relative;
+    }
+    .q { margin: 15px 0; }
+    .a { font-size: 20px; color: #999; margin: 33px 0; }
+    .prompt { font-size: 18px; margin-bottom: 8px; }
+    .success { color: green; }
+    .meta { color: #5f8fd7; font-size: 16px; margin-bottom: 8px; }
+    .cursor { position: absolute; top: 12px; right: 12px; }
+    .disabled { background-color: #999; cursor: not-allowed;}
+    .card {
+      position: relative;
+      padding: 12px;
+      border-radius: 8px;
+      margin-top: 36px;
+      width: 500px;
+      margin: 0 auto;
+      background-color: #fffeb9;
+    }
+    .card--correct { background-color: lightgreen; }
+    h1 { text-align: center; }
+    input[type="text"] {
+      display: block;
+      border-radius: 8px;
+      border: 0;
+      background-color: #eee;
+      margin-bottom: 24px;
+      width: 100%;
+      padding: 8px 12px;
+      color: #666;
+    }
+    button {
+      border: 0;
+      border-radius: 8px;
+      padding: 8px;
+      cursor: pointer;
+      background-color: #3888d5;
+      color: white;
+      font-size: 18px;
+    }
+    button:hover {
+      background-color: #0082ff;
+    }
+    button.disabled:hover {
+      background-color: #999;
+    }
+    button + button { margin-left: 16px; }
+  </style>
+</head>
+
+<body>
+
+  <!-- Add your site or application content here -->
+  <h1>Flash Cards</h1>
+  <div id="root" class="container"></div>
+  <script src="./js/reactComponents.js"></script>
+
+  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+  <script>
+    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+    ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
+  </script>
+  <script src="https://www.google-analytics.com/analytics.js" async></script>
+</body>
+
+</html>
